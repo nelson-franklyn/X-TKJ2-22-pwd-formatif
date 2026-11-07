@@ -1,0 +1,63 @@
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+/* 1. .menu a (Descendant) */
+.menu a {
+    color: navy;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+/* 2. .menu a:hover (Pseudo-class) */
+.menu a:hover {
+    color: rgb(184, 115, 51);
+}
+
+/* 3. .btn (Class) */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+/* Button variants */
+.btn-grow {
+    background-color: navy;
+    color: white;
+    transition: transform 0.3s ease-out;
+}
+
+.btn-darken {
+    background-color: rgb(184, 115, 51);
+    color: white;
+    transition: background-color 0.4s linear;
+}
+
+/* 4. .btn-grow:hover */
+.btn-grow:hover {
+    transform: scale(1.05);
+}
+
+/* 5. .btn-darken:hover */
+.btn-darken:hover {
+    background-color: rgb(140, 85, 35);
+}
+
+/* 6. a:focus */
+a:focus, .btn:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
+}
+
+footer {
+    margin-top: 50px;
+}
