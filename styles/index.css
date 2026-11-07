@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+}
+
+/* Header: rata tengah, latar gelap, tulisan terang */
+header {
+    text-align: center;
+    background-color: #001f3f;
+    color: white;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    color: #b0c4de;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Grouping untuk ID #components dan #pages */
+#components, #pages {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#components h2, #pages h2 {
+    color: #001f3f;
+    font-size: 20px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 8px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Descendant selector untuk tautan di dalam main */
+main a {
+    color: rgb(184, 115, 51);
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Footer: tulisan kecil, rata tengah, latar berwarna */
+footer {
+    text-align: center;
+    background-color: #e2e8f0;
+    padding: 15px;
+    font-size: 14px;
+    color: #333333;
+}
