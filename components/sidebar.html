@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar dan Tata Letak - Nelson Franklyn</title>
+    <style>
+        /* 2. Selector bintang * (Universal): box-sizing border-box. body (Tag): margin 0 */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        /* 3. .layout (Class): Flexbox (display flex), sehingga menu samping di kiri dan isi halaman di kanan */
+        .layout {
+            display: flex;
+            min-height: 90vh;
+        }
+
+        /* 4. #sidebar (ID): lebar 25%, latar gelap, tulisan terang, dan padding 20 px */
+        #sidebar {
+            width: 25%;
+            background-color: #001f3f;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        #sidebar h3 {
+            margin-top: 0;
+            font-size: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+        }
+
+        /* 5. #sidebar nav (Descendant): tautan tersusun ke bawah dengan jarak 12 px */
+        #sidebar nav {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        /* 6. #sidebar a (Descendant): tulisan terang dan tanpa garis bawah. #sidebar a:hover (Pseudo-class): warna berubah */
+        #sidebar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        #sidebar a:hover {
+            color: rgb(184, 115, 51);
+        }
+
+        /* 7. .main-content (Class): lebar 75% dan padding 30 px */
+        .main-content {
+            width: 75%;
+            padding: 30px;
+            background-color: #ffffff;
+        }
+
+        /* 8. .main-content h1 dan .main-content p (Descendant): warna judul dan jarak antar baris paragraf */
+        .main-content h1 {
+            color: #1f2328;
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .main-content p {
+            color: #333333;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* 9. footer (Tag): tulisan rata tengah, padding 14 px, dan latar abu-abu */
+        footer {
+            text-align: center;
+            padding: 14px;
+            background-color: #d0d7de;
+        }
+
+        footer a {
+            color: navy;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="layout">
+        <!-- Sidebar di sebelah kiri -->
+        <aside id="sidebar">
+            <h3>Menu</h3>
+            <nav>
+                <a href="#">Profil</a>
+                <a href="#">Proyek</a>
+                <a href="#">Sertifikat</a>
+                <a href="#">Kontak</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content di sebelah kanan -->
+        <main class="main-content">
+            <h1>Profil Saya</h1>
+            <p>Halo! Saya Nelson Franklyn, siswa kelas X TKJ. Saya sedang belajar membuat website dengan HTML dan CSS.</p>
+            <p>Di halaman ini ada ringkasan tentang proyek saya yang sudah dibuat, dan kemampuan yang sedang dipelajari.</p>
+            <p>Gunakan menu di sebelah kiri untuk menjelajahi area bagian portofolio.</p>
+        </main>
+    </div>
+
+    <!-- Footer di luar layout -->
+    <footer>
+        <a href="../index.html">Kembali ke Beranda</a>
+    </footer>
+
+</body>
+</html>
