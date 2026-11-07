@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumpulan Tombol</title>
+    <style>
+        /* Tag Selector */
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h2 {
+            color: #333333;
+            font-size: 20px;
+        }
+
+        /* Class Selector untuk semua tombol */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Descendant Selector & Margin antar tombol */
+        .button-group .btn {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Warna Latar Masing-masing Tombol (Menggunakan Nama, Hex, RGB, RGBA) */
+        .btn-primary {
+            background-color: navy; /* Nama warna */
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: #d0d7de; /* Hex */
+            color: #24292f;
+        }
+
+        .btn-outline {
+            background-color: rgba(255, 255, 255, 0.8); /* RGBA */
+            color: #24292f;
+            border: 2px solid #001f3f;
+        }
+
+        .btn-send {
+            background-color: rgb(217, 131, 39); /* RGB */
+            color: white;
+        }
+
+        /* Grouping Selector untuk teks gelap */
+        .btn-secondary, .btn-outline {
+            color: #1f2328;
+        }
+
+        /* Pseudo-class :hover untuk efek ubah warna saat kursor di atas tombol */
+        .btn-primary:hover {
+            background-color: #000080;
+        }
+
+        .btn-secondary:hover {
+            background-color: #afb8c1;
+        }
+
+        .btn-outline:hover {
+            background-color: #f0f6fc;
+        }
+
+        .btn-send:hover {
+            background-color: rgb(180, 105, 25);
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h2>Normal</h2>
+        <div class="button-group">
+            <a href="#" class="btn btn-primary">Lihat Proyek</a>
+            <a href="#" class="btn btn-secondary">Unduh CV</a>
+            <a href="#" class="btn btn-outline">Hubungi Saya</a>
+            <a href="#" class="btn btn-send">Kirim Pesan</a>
+        </div>
+
+        <h2 style="margin-top: 40px;">Hover (Dipaksa agar terlihat di screenshot)</h2>
+        <div class="button-group">
+            <a href="#" class="btn btn-primary" style="background-color: #000080;">Lihat Proyek</a>
+            <a href="#" class="btn btn-secondary" style="background-color: #afb8c1;">Unduh CV</a>
+            <a href="#" class="btn btn-outline" style="background-color: #f0f6fc;">Hubungi Saya</a>
+            <a href="#" class="btn btn-send" style="background-color: rgb(180, 105, 25);">Kirim Pesan</a>
+        </div>
+    </main>
+
+    <footer style="margin-top: 50px;">
+        <a href="../index.html" style="color: navy; text-decoration: none;">Kembali ke Beranda</a>
+    </footer>
+
+</body>
+</html>
